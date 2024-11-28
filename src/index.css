@@ -120,3 +120,76 @@ nav ul li a:hover {
 .movie-grid .movies img:hover {
   transform: scale(1.1);
 }
+footer {
+  background-color: #141414;
+  color: #757575;
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #757575;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-payment {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-payment h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.payment-icons img {
+  width: 40px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
