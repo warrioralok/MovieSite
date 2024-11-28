@@ -52,7 +52,15 @@ nav ul li a:hover {
   justify-content: center;
   position: relative;
 }
-
+a.active{
+  color: #e50914;
+}
+li:has(> a.active){
+  border-bottom: 2px solid  #e50914 ;
+}
+li{
+  height: 20px;
+}
 .hero::after {
   content: '';
   position: absolute;
