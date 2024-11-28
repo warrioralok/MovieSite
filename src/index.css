@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #141414;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e50914;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e50914;
+}
+
+/* Hero Section */
+.hero {
+  height: 60vh;
+  background: url('https://assets.nflxext.com/ffe/siteui/vlv3/5b0a45f6-0839-4db5-bc33-f213d0271125/3b35a68f-6b2a-4880-bd86-d7c509e739a0/MY-en-20230710-popsignuptwoweeks-perspective_alpha_website_large.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: #f40612;
+}
+
+/* Movie Grid */
+.movie-grid {
+  padding: 20px;
+}
+
+.movie-grid h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.movie-grid .movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.movie-grid .movies img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  height: 100%;
+}
+
+.movie-grid .movies img:hover {
+  transform: scale(1.1);
+}
