@@ -5,12 +5,14 @@ import Movies from "./Pages/Movies"
 import NewPopular from "./Pages/NewPopular"
 import About from "./Pages/About"
 import Layout from "./Component/BodyComponent/Layout"
+import Error from "./Pages/Error"
 
 function App() {
   const router = createBrowserRouter([
     {
       path:'/',
       element: <Layout/>,
+      errorElement:<Error/>,
       children:[
         {
           path:'/',

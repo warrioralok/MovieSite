@@ -201,3 +201,32 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 }
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 8rem;
+  color: #ff6f61;
+}
+
+.container p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.container a.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007BFF;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.container a.btn:hover {
+  background-color: #0056b3;
+}
