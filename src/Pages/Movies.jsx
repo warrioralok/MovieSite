@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 
 const Movies = () => {
-  const MovieDetail = useLoaderData();  
+  const MovieDetail = useLoaderData(); 
   return (
     <>
       <section className="banner" style={{background:`URL(${MovieDetail.Poster}`}}>
