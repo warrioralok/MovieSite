@@ -6,6 +6,7 @@ import NewPopular from "./Pages/NewPopular"
 import About from "./Pages/About"
 import Layout from "./Component/BodyComponent/Layout"
 import Error from "./Pages/Error"
+import { Apitdata } from "./Component/ApiData/Apitdata"
 
 function App() {
   const router = createBrowserRouter([
@@ -16,11 +17,13 @@ function App() {
       children:[
         {
           path:'/',
-          element:<Home/>
+          element:<Home/>,
+          loader:Apitdata
         },
         {
           path:'/home',
-          element:<Home/>
+          element:<Home/>,
+          loader:Apitdata
         },
         {
           path:'/tvshows',
