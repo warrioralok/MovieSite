@@ -8,6 +8,7 @@ import Layout from "./Component/BodyComponent/Layout"
 import Error from "./Pages/Error"
 import { Apitdata } from "./Component/ApiData/Apitdata"
 import { Moviedata } from "./Component/ApiData/Moviedata"
+import Contact, { contactData } from "./Pages/Contact"
 
 function App() {
   const router = createBrowserRouter([
@@ -42,6 +43,11 @@ function App() {
         {
           path:'/about',
           element: <About/>
+        },
+        {
+          path:'/contact',
+          element: <Contact/>,
+          action: contactData
         }
       ]
     }
