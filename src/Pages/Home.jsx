@@ -1,9 +1,11 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigation } from "react-router-dom";
 import { Card } from "./Card";
 
 const Home = () => {
   const moviesData = useLoaderData(); 
-  console.log(moviesData.Search) 
+  const loadingState = useNavigation();
+  console.log(loadingState)
+  if(loadingState && loadingState.state==='idle'){
   return (
     <>
       <section className="hero">
@@ -24,6 +26,8 @@ const Home = () => {
       </section>
       </>
   );
+}
+return <h1 style={{color:'#fff'}}>Loading...</h1>
 };
 
 export default Home;

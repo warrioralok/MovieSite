@@ -11,7 +11,7 @@ const Error = () => {
   
   console.log(error.text,error.mesaage);
 
-  return (
+  return ( 
     <>
       <div className="container">
         <p className="backlink" onClick={backto}>&nbsp;Back to prveious page</p>
