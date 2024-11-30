@@ -1,5 +1,5 @@
 export const Moviedata = async() =>{
-    const movieApi = 'https://www.omdbapi.com/?apikey=150486b3&i=tt8080122';
+    const movieApi = `https://www.omdbapi.com/?apikey=${import.meta.env.VITE_APT_KEY}&i=tt8080122`;
 
     try{
         const ajxcall = await fetch(movieApi);
