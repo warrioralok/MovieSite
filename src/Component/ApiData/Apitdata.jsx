@@ -1,9 +1,9 @@
 export const Apitdata = async () =>{
     
-    const APIUrl = 'https://www.omdbapi.com/?i=tt389619&apikey=150486b3&f&s=godfather';
+    const APIUrl = `https://www.omdbapi.com/?i=tt389619&apikey=${import.meta.env.VITE_APT_KEY}&f&s=godfather`;
     try{
         const res = await fetch(APIUrl);
-        const data= res.json();
+        const data= await res.json();
         return data;
     }
     catch(error){

@@ -7,6 +7,7 @@ import About from "./Pages/About"
 import Layout from "./Component/BodyComponent/Layout"
 import Error from "./Pages/Error"
 import { Apitdata } from "./Component/ApiData/Apitdata"
+import { Moviedata } from "./Component/ApiData/Moviedata"
 
 function App() {
   const router = createBrowserRouter([
@@ -30,8 +31,9 @@ function App() {
           element:<TvShows/>
         },
         {
-          path:'/movies',
-          element:<Movies/>
+          path:'/movies/:movieID',
+          element:<Movies/>,
+          loader:Moviedata
         },
         {
           path:'/popular',

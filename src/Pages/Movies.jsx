@@ -1,13 +1,14 @@
+import { useLoaderData } from "react-router-dom";
+
 const Movies = () => {
+  const MovieDetail = useLoaderData();  
   return (
     <>
-      <section className="banner">
+      <section className="banner" style={{background:`URL(${MovieDetail.Poster}`}}>
         <div className="banner-content">
-          <h1>Movie Title</h1>
+          <h1 style={{color:'#fff'}}>{MovieDetail.Title}</h1>
           <p>
-            This is a brief description of the movie or product. It provides an
-            overview of the content, storyline, or features in a compelling and
-            engaging way to capture user interest.
+          {MovieDetail.Plot}
           </p>
           <button>Play</button>
           <button>More Info</button>
